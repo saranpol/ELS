@@ -10,4 +10,6 @@
 
 @interface ViewQ1 : UIViewController
 
+- (IBAction)clickBack:(id)sender;
+
 @end

@@ -23,6 +23,7 @@
 
 - (void)resetData;
 - (void)addData;
+- (void)removeData:(int)idx;
 - (NSString*)getHtml;
 
 

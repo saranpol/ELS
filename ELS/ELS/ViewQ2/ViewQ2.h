@@ -13,4 +13,7 @@
 @property (nonatomic, weak) IBOutlet UITextField *mTextField;
 @property (nonatomic, weak) IBOutlet UIView *mView;
 
+
+- (IBAction)clickBack:(id)sender;
+
 @end

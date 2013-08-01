@@ -10,4 +10,12 @@
 
 @interface CellUser : UITableViewCell
 
+@property (nonatomic, weak) IBOutlet UILabel *mLabelName;
+@property (nonatomic, weak) IBOutlet UILabel *mLabelPhone;
+@property (nonatomic, weak) IBOutlet UILabel *mLabelEmail;
+@property (nonatomic, weak) IBOutlet UILabel *mLabelAnswer;
+@property (nonatomic, assign) UITableView *mTableView;
+
+- (IBAction)clickDelete:(id)sender;
+
 @end

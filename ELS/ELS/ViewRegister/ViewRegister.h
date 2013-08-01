@@ -15,4 +15,6 @@
 @property (nonatomic, weak) IBOutlet UITextField *mTextFieldEmail;
 @property (nonatomic, weak) IBOutlet UIView *mView;
 
+- (IBAction)clickBack:(id)sender;
+
 @end

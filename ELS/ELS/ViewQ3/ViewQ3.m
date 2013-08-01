@@ -80,7 +80,11 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     API *a = [API getAPI];
     a.mQ3 = [mTextField.text intValue];
+    [mTextField resignFirstResponder];
 }
 
+- (IBAction)clickBack:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
 @end

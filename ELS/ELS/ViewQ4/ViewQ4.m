@@ -41,4 +41,9 @@
     }
 }
 
+- (IBAction)clickBack:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+
 @end

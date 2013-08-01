@@ -42,4 +42,11 @@
     }
 }
 
+
+- (IBAction)clickBack:(id)sender {
+    API *a = [API getAPI];
+    [a resetData];
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 @end

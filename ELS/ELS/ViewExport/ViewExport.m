@@ -7,12 +7,11 @@
 //
 
 #import "ViewExport.h"
-
-@interface ViewExport ()
-
-@end
+#import "API.h"
 
 @implementation ViewExport
+
+@synthesize mWebView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,6 +26,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    API *a = [API getAPI];
+    [mWebView loadHTMLString:[a getHtml] baseURL:nil];
 }
 
 - (void)didReceiveMemoryWarning

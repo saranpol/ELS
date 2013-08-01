@@ -79,9 +79,16 @@
     a.mName = mTextFieldName.text;
     a.mPhone = mTextFieldPhone.text;
     a.mEmail = mTextFieldEmail.text;
+    
+    [mTextFieldName resignFirstResponder];
+    [mTextFieldPhone resignFirstResponder];
+    [mTextFieldEmail resignFirstResponder];
 }
 
 
+- (IBAction)clickBack:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
 
 @end

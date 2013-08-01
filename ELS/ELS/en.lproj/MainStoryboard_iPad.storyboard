@@ -70,6 +70,23 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="q1.png" translatesAutoresizingMaskIntoConstraints="NO" id="2LS-xJ-5NC"/>
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aNV-Mn-gOR">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="XNI-ih-jYZ"/>
+                                    <constraint firstAttribute="height" constant="60" id="XnJ-it-nNP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="&lt;">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickBack:" destination="iAN-Dh-9XR" eventType="touchUpInside" id="wDM-kf-omN"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ne7-PV-fnr">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" image="btn_yes.png">
@@ -99,10 +116,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="aNV-Mn-gOR" firstAttribute="leading" secondItem="Aoz-F8-hQN" secondAttribute="leading" constant="8" id="Buf-lO-kqx"/>
                             <constraint firstItem="Ne7-PV-fnr" firstAttribute="centerY" secondItem="2LS-xJ-5NC" secondAttribute="centerY" type="default" id="GNF-tM-WpV"/>
                             <constraint firstAttribute="trailing" secondItem="NLd-6O-AkF" secondAttribute="trailing" constant="296" id="OTf-K9-QcC"/>
                             <constraint firstItem="Ne7-PV-fnr" firstAttribute="leading" secondItem="Aoz-F8-hQN" secondAttribute="leading" constant="310" id="S8B-yU-rLi"/>
                             <constraint firstItem="NLd-6O-AkF" firstAttribute="top" secondItem="Ne7-PV-fnr" secondAttribute="top" type="default" id="T73-cR-Bav"/>
+                            <constraint firstAttribute="bottom" secondItem="aNV-Mn-gOR" secondAttribute="bottom" constant="8" id="cjw-zx-5ge"/>
                             <constraint firstItem="2LS-xJ-5NC" firstAttribute="leading" secondItem="Aoz-F8-hQN" secondAttribute="leading" type="default" id="ly2-ED-2mK"/>
                             <constraint firstItem="2LS-xJ-5NC" firstAttribute="top" secondItem="Aoz-F8-hQN" secondAttribute="top" type="default" id="xLz-r8-d6H"/>
                         </constraints>
@@ -146,6 +165,23 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Mf-xj-3DT">
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="q2.png" translatesAutoresizingMaskIntoConstraints="NO" id="7RS-c0-qlU"/>
+                                    <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hWG-g8-8gO">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="UwG-Va-dck"/>
+                                            <constraint firstAttribute="height" constant="60" id="bvv-qC-wie"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="&lt;">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="clickBack:" destination="ejk-4o-6ft" eventType="touchUpInside" id="orN-5v-w5I"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bSp-st-J4n">
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <state key="normal" image="btn_ok.png">
@@ -175,6 +211,8 @@
                                     <constraint firstItem="7RS-c0-qlU" firstAttribute="top" secondItem="2Mf-xj-3DT" secondAttribute="top" type="default" id="PV7-r3-KBG"/>
                                     <constraint firstAttribute="trailing" secondItem="bSp-st-J4n" secondAttribute="trailing" constant="278" id="atG-z1-v12"/>
                                     <constraint firstItem="bSp-st-J4n" firstAttribute="top" secondItem="2Mf-xj-3DT" secondAttribute="top" constant="299" id="bRT-8l-Hem"/>
+                                    <constraint firstAttribute="bottom" secondItem="hWG-g8-8gO" secondAttribute="bottom" constant="8" id="jCz-Pd-Z1U"/>
+                                    <constraint firstItem="hWG-g8-8gO" firstAttribute="leading" secondItem="2Mf-xj-3DT" secondAttribute="leading" constant="8" id="tkQ-Il-iDK"/>
                                     <constraint firstItem="1ak-2D-EQG" firstAttribute="leading" secondItem="2Mf-xj-3DT" secondAttribute="leading" constant="344" id="vH5-NW-T3c"/>
                                     <constraint firstItem="1ak-2D-EQG" firstAttribute="top" secondItem="2Mf-xj-3DT" secondAttribute="top" constant="332" id="w9E-Wc-sme"/>
                                 </constraints>
@@ -208,6 +246,23 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="q4.png" translatesAutoresizingMaskIntoConstraints="NO" id="8IM-fb-0Oe"/>
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hwi-ij-sw1">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="BTc-lv-7Yz"/>
+                                    <constraint firstAttribute="height" constant="60" id="zrp-af-AnA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="&lt;">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickBack:" destination="CsF-AV-nU4" eventType="touchUpInside" id="Lyx-Sa-6rj"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gi0-ah-YBk">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" image="btn_yes.png">
@@ -238,10 +293,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Gi0-ah-YBk" firstAttribute="top" secondItem="cKN-y7-3OJ" secondAttribute="top" constant="337" id="25d-cn-iBX"/>
+                            <constraint firstAttribute="bottom" secondItem="hwi-ij-sw1" secondAttribute="bottom" constant="8" id="2jN-6L-lO7"/>
                             <constraint firstItem="Gi0-ah-YBk" firstAttribute="leading" secondItem="cKN-y7-3OJ" secondAttribute="leading" constant="312" id="3oh-C8-Dgx"/>
                             <constraint firstItem="vTd-A6-rvZ" firstAttribute="top" secondItem="Gi0-ah-YBk" secondAttribute="top" type="default" id="DjK-uw-1Xq"/>
                             <constraint firstItem="8IM-fb-0Oe" firstAttribute="top" secondItem="cKN-y7-3OJ" secondAttribute="top" type="default" id="iAL-1g-Kyl"/>
                             <constraint firstAttribute="trailing" secondItem="vTd-A6-rvZ" secondAttribute="trailing" constant="294" id="qzQ-hv-JMm"/>
+                            <constraint firstItem="hwi-ij-sw1" firstAttribute="leading" secondItem="cKN-y7-3OJ" secondAttribute="leading" constant="8" id="sAn-QQ-2EV"/>
                             <constraint firstItem="8IM-fb-0Oe" firstAttribute="leading" secondItem="cKN-y7-3OJ" secondAttribute="leading" type="default" id="yut-GM-UL3"/>
                         </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -263,6 +320,23 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EoQ-xU-Eq1">
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="q3.png" translatesAutoresizingMaskIntoConstraints="NO" id="0u7-A6-Nr3"/>
+                                    <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qP5-Qd-N0S">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="4Rc-WA-QF8"/>
+                                            <constraint firstAttribute="width" constant="60" id="pnb-6t-RiB"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="&lt;">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="clickBack:" destination="2bA-ly-nlT" eventType="touchUpInside" id="8Gp-GZ-eLn"/>
+                                        </connections>
+                                    </button>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="8" textAlignment="center" minimumFontSize="80" translatesAutoresizingMaskIntoConstraints="NO" id="QNk-cT-ffb">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="84" id="RQo-ja-zA2"/>
@@ -289,7 +363,9 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="0u7-A6-Nr3" firstAttribute="top" secondItem="EoQ-xU-Eq1" secondAttribute="top" type="default" id="1f5-fR-mjP"/>
+                                    <constraint firstItem="qP5-Qd-N0S" firstAttribute="leading" secondItem="EoQ-xU-Eq1" secondAttribute="leading" constant="8" id="NE3-jJ-hcI"/>
                                     <constraint firstItem="0u7-A6-Nr3" firstAttribute="leading" secondItem="EoQ-xU-Eq1" secondAttribute="leading" type="default" id="QOw-4Z-9IX"/>
+                                    <constraint firstAttribute="bottom" secondItem="qP5-Qd-N0S" secondAttribute="bottom" constant="8" id="T8Z-oo-7bG"/>
                                     <constraint firstItem="QNk-cT-ffb" firstAttribute="leading" secondItem="EoQ-xU-Eq1" secondAttribute="leading" constant="344" id="Yii-dG-47C"/>
                                     <constraint firstItem="gxD-BM-FKJ" firstAttribute="top" secondItem="EoQ-xU-Eq1" secondAttribute="top" constant="299" id="kfD-YS-QlY"/>
                                     <constraint firstItem="QNk-cT-ffb" firstAttribute="top" secondItem="EoQ-xU-Eq1" secondAttribute="top" constant="332" id="oA3-hF-pEw"/>
@@ -327,6 +403,23 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zyt-H0-iWs">
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="register.png" translatesAutoresizingMaskIntoConstraints="NO" id="sad-De-t7h"/>
+                                    <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rqK-5c-No5">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="Dku-zl-HOu"/>
+                                            <constraint firstAttribute="height" constant="60" id="uUW-xI-5sc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="&lt;">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="clickBack:" destination="kxM-2Z-RmD" eventType="touchUpInside" id="OtN-1d-SKz"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VMn-Pa-dzC">
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <state key="normal" image="btn_ok.png">
@@ -374,10 +467,12 @@
                                     <constraint firstItem="wcY-nS-fdp" firstAttribute="centerY" secondItem="sad-De-t7h" secondAttribute="centerY" type="default" id="OAs-wb-0so"/>
                                     <constraint firstItem="wcY-nS-fdp" firstAttribute="leading" secondItem="wxl-eY-Fxj" secondAttribute="leading" type="default" id="Pxg-G8-gUH"/>
                                     <constraint firstItem="wcY-nS-fdp" firstAttribute="trailing" secondItem="wxl-eY-Fxj" secondAttribute="trailing" type="default" id="V8S-dA-7Vs"/>
+                                    <constraint firstAttribute="bottom" secondItem="rqK-5c-No5" secondAttribute="bottom" constant="8" id="cXP-SG-Cnb"/>
                                     <constraint firstItem="wxl-eY-Fxj" firstAttribute="top" secondItem="Zyt-H0-iWs" secondAttribute="top" constant="294" id="dlD-P7-RMv"/>
                                     <constraint firstItem="6NC-bC-OeE" firstAttribute="leading" secondItem="Zyt-H0-iWs" secondAttribute="leading" constant="428" id="e67-es-NVx"/>
                                     <constraint firstAttribute="bottom" secondItem="VMn-Pa-dzC" secondAttribute="bottom" constant="170" id="hGg-Ql-ZiN"/>
                                     <constraint firstItem="VMn-Pa-dzC" firstAttribute="centerX" secondItem="sad-De-t7h" secondAttribute="centerX" type="default" id="kXv-lf-wux"/>
+                                    <constraint firstItem="rqK-5c-No5" firstAttribute="leading" secondItem="Zyt-H0-iWs" secondAttribute="leading" constant="8" id="vDx-hk-OcT"/>
                                     <constraint firstItem="sad-De-t7h" firstAttribute="leading" secondItem="Zyt-H0-iWs" secondAttribute="leading" type="default" id="vg0-cw-Tqc"/>
                                     <constraint firstItem="wxl-eY-Fxj" firstAttribute="trailing" secondItem="6NC-bC-OeE" secondAttribute="trailing" type="default" id="zvx-gq-DZh"/>
                                 </constraints>
@@ -413,6 +508,23 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="sumary.png" translatesAutoresizingMaskIntoConstraints="NO" id="dV3-9S-QoK"/>
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UI7-4j-GFY">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Nmi-eL-fbR"/>
+                                    <constraint firstAttribute="width" constant="60" id="Uc2-5X-G10"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="&lt;">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickBack:" destination="EJi-hq-t9d" eventType="touchUpInside" id="ScS-Mr-xv4"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TBJ-Bl-9DX">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" image="btn_send.png">
@@ -468,12 +580,14 @@
                             <constraint firstItem="vHS-gB-2V7" firstAttribute="top" secondItem="HSu-BW-Ib5" secondAttribute="top" type="default" id="8VA-AN-96s"/>
                             <constraint firstItem="BWh-66-2On" firstAttribute="leading" secondItem="vHS-gB-2V7" secondAttribute="leading" type="default" id="Al0-0o-sFH"/>
                             <constraint firstItem="TBJ-Bl-9DX" firstAttribute="centerX" secondItem="dV3-9S-QoK" secondAttribute="centerX" type="default" id="C4c-Ip-vwD"/>
+                            <constraint firstAttribute="bottom" secondItem="UI7-4j-GFY" secondAttribute="bottom" constant="8" id="DSP-J0-VVQ"/>
                             <constraint firstItem="rWH-J4-1Tk" firstAttribute="top" secondItem="L5L-X9-wTT" secondAttribute="top" constant="362" id="ELl-ds-bAg"/>
                             <constraint firstItem="zwS-Mb-oym" firstAttribute="top" secondItem="L5L-X9-wTT" secondAttribute="top" constant="302" id="Fwo-ag-LXy"/>
                             <constraint firstAttribute="trailing" secondItem="BWh-66-2On" secondAttribute="trailing" constant="243" id="Jmj-En-yWK"/>
                             <constraint firstItem="BWh-66-2On" firstAttribute="leading" secondItem="fAC-2o-ny5" secondAttribute="leading" type="default" id="LqJ-1K-wOU"/>
                             <constraint firstItem="zwS-Mb-oym" firstAttribute="centerX" secondItem="fAC-2o-ny5" secondAttribute="centerX" type="default" id="O7b-hH-Sz7"/>
                             <constraint firstItem="TBJ-Bl-9DX" firstAttribute="leading" secondItem="f3x-U5-BJW" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="UZl-JD-GgM"/>
+                            <constraint firstItem="UI7-4j-GFY" firstAttribute="leading" secondItem="L5L-X9-wTT" secondAttribute="leading" constant="8" id="Ud7-8W-IFo"/>
                             <constraint firstItem="dV3-9S-QoK" firstAttribute="top" secondItem="L5L-X9-wTT" secondAttribute="top" type="default" id="WuK-QI-ft3"/>
                             <constraint firstItem="rWH-J4-1Tk" firstAttribute="leading" secondItem="zwS-Mb-oym" secondAttribute="leading" type="default" id="aAw-VT-YBZ"/>
                             <constraint firstItem="BWh-66-2On" firstAttribute="top" secondItem="L5L-X9-wTT" secondAttribute="top" constant="218" id="ff2-En-TAV"/>
@@ -545,7 +659,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Default-Landscape.png" translatesAutoresizingMaskIntoConstraints="NO" id="rVD-nj-e3s"/>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gdb-pY-gTE">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="r1d-3l-1h5"/>
@@ -578,13 +691,13 @@
                                     <segue destination="jWO-ur-uMB" kind="modal" modalTransitionStyle="crossDissolve" id="oNz-FJ-Kmh"/>
                                 </connections>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="56" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="eaH-Cv-omb">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" allowsSelection="NO" rowHeight="56" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="eaH-Cv-omb">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="700" id="whx-Rr-vwO"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="CellUser" rowHeight="56" id="33y-bc-pxq">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="CellUser" rowHeight="56" id="33y-bc-pxq" customClass="CellUser">
                                         <rect key="frame" x="0.0" y="22" width="1024" height="56"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -603,6 +716,9 @@
                                                     <state key="highlighted">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="clickDelete:" destination="33y-bc-pxq" eventType="touchUpInside" id="41r-mC-bNg"/>
+                                                    </connections>
                                                 </button>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Name SurnameSurname" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LKa-sP-OSd">
                                                     <constraints>
@@ -651,25 +767,36 @@
                                             <constraint firstAttribute="trailing" secondItem="huV-Zu-71R" secondAttribute="trailing" constant="13" id="lnq-Eo-wRj"/>
                                             <constraint firstItem="a9r-2B-dwc" firstAttribute="leading" secondItem="MvF-wB-A1w" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="oqT-gh-7L5"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="mLabelAnswer" destination="a9r-2B-dwc" id="MeZ-S2-4uW"/>
+                                            <outlet property="mLabelEmail" destination="MvF-wB-A1w" id="mgV-nS-R3O"/>
+                                            <outlet property="mLabelName" destination="LKa-sP-OSd" id="XBQ-ff-Wtg"/>
+                                            <outlet property="mLabelPhone" destination="HZu-1z-Moq" id="hm5-pz-auk"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="msg-Wp-MSg" id="Be5-T3-Xjg"/>
+                                    <outlet property="delegate" destination="msg-Wp-MSg" id="526-DW-LqF"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="yIb-WA-SAk" secondAttribute="trailing" constant="12" id="6dO-Xh-xeT"/>
                             <constraint firstItem="eaH-Cv-omb" firstAttribute="bottom" secondItem="QfR-u3-dir" secondAttribute="bottom" type="default" id="CmV-tB-0Ws"/>
-                            <constraint firstItem="rVD-nj-e3s" firstAttribute="top" secondItem="QfR-u3-dir" secondAttribute="top" type="default" id="LUN-HF-ike"/>
                             <constraint firstItem="Gdb-pY-gTE" firstAttribute="leading" secondItem="QfR-u3-dir" secondAttribute="leading" constant="12" id="Wa2-OW-Gqd"/>
                             <constraint firstItem="Gdb-pY-gTE" firstAttribute="top" secondItem="QfR-u3-dir" secondAttribute="top" constant="12" id="aj5-d5-aGu"/>
                             <constraint firstItem="eaH-Cv-omb" firstAttribute="leading" secondItem="QfR-u3-dir" secondAttribute="leading" type="default" id="hzN-Pm-fw1"/>
-                            <constraint firstItem="rVD-nj-e3s" firstAttribute="leading" secondItem="QfR-u3-dir" secondAttribute="leading" type="default" id="kTC-cU-1Vd"/>
                             <constraint firstItem="eaH-Cv-omb" firstAttribute="trailing" secondItem="QfR-u3-dir" secondAttribute="trailing" type="default" id="p48-Sn-NKn"/>
                             <constraint firstItem="Gdb-pY-gTE" firstAttribute="baseline" secondItem="yIb-WA-SAk" secondAttribute="baseline" type="default" id="rMk-hD-cfk"/>
                         </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" id="c4H-ww-EDg"/>
+                    <connections>
+                        <outlet property="mTableView" destination="eaH-Cv-omb" id="Lee-6v-ERs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UgY-Xa-ozf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -683,7 +810,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Default-Landscape.png" translatesAutoresizingMaskIntoConstraints="NO" id="2ho-wU-djL"/>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wfy-Nq-buN">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="Mfm-AL-65F"/>
@@ -705,20 +831,22 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="700" id="NEq-MZ-DuW"/>
                                 </constraints>
+                                <dataDetectorType key="dataDetectorTypes"/>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="fc3-l5-VUo" firstAttribute="trailing" secondItem="xDh-Wr-24q" secondAttribute="trailing" type="default" id="AVf-81-MlI"/>
-                            <constraint firstItem="2ho-wU-djL" firstAttribute="top" secondItem="xDh-Wr-24q" secondAttribute="top" type="default" id="EOQ-PQ-jGT"/>
                             <constraint firstItem="wfy-Nq-buN" firstAttribute="leading" secondItem="xDh-Wr-24q" secondAttribute="leading" constant="12" id="FJn-K8-lCv"/>
                             <constraint firstItem="wfy-Nq-buN" firstAttribute="top" secondItem="xDh-Wr-24q" secondAttribute="top" constant="12" id="ItJ-JU-BQe"/>
-                            <constraint firstItem="2ho-wU-djL" firstAttribute="leading" secondItem="xDh-Wr-24q" secondAttribute="leading" type="default" id="gjQ-aB-eYY"/>
                             <constraint firstItem="fc3-l5-VUo" firstAttribute="bottom" secondItem="xDh-Wr-24q" secondAttribute="bottom" type="default" id="qff-eq-9to"/>
                             <constraint firstItem="fc3-l5-VUo" firstAttribute="leading" secondItem="xDh-Wr-24q" secondAttribute="leading" type="default" id="wk9-3E-Ny3"/>
                         </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
+                    <connections>
+                        <outlet property="mWebView" destination="fc3-l5-VUo" id="HMc-Yw-JMu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hVQ-mc-8uS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -744,6 +872,16 @@
         <image name="thankyou.png" width="1024" height="768"/>
     </resources>
     <classes>
+        <class className="CellUser" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CellUser.h"/>
+            <relationships>
+                <relationship kind="action" name="clickDelete:"/>
+                <relationship kind="outlet" name="mLabelAnswer" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="mLabelEmail" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="mLabelName" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="mLabelPhone" candidateClass="UILabel"/>
+            </relationships>
+        </class>
         <class className="ELSViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ELSViewController.h"/>
         </class>
@@ -754,20 +892,26 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewData.h"/>
             <relationships>
                 <relationship kind="action" name="clickBack:"/>
+                <relationship kind="outlet" name="mTableView" candidateClass="UITableView"/>
             </relationships>
         </class>
         <class className="ViewExport" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewExport.h"/>
             <relationships>
                 <relationship kind="action" name="clickBack:"/>
+                <relationship kind="outlet" name="mWebView" candidateClass="UIWebView"/>
             </relationships>
         </class>
         <class className="ViewQ1" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewQ1.h"/>
+            <relationships>
+                <relationship kind="action" name="clickBack:"/>
+            </relationships>
         </class>
         <class className="ViewQ2" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewQ2.h"/>
             <relationships>
+                <relationship kind="action" name="clickBack:"/>
                 <relationship kind="outlet" name="mTextField" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="mView" candidateClass="UIView"/>
             </relationships>
@@ -775,16 +919,21 @@
         <class className="ViewQ3" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewQ3.h"/>
             <relationships>
+                <relationship kind="action" name="clickBack:"/>
                 <relationship kind="outlet" name="mTextField" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="mView" candidateClass="UIView"/>
             </relationships>
         </class>
         <class className="ViewQ4" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewQ4.h"/>
+            <relationships>
+                <relationship kind="action" name="clickBack:"/>
+            </relationships>
         </class>
         <class className="ViewRegister" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewRegister.h"/>
             <relationships>
+                <relationship kind="action" name="clickBack:"/>
                 <relationship kind="outlet" name="mTextFieldEmail" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="mTextFieldName" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="mTextFieldPhone" candidateClass="UITextField"/>
@@ -794,6 +943,7 @@
         <class className="ViewSummary" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewSummary.h"/>
             <relationships>
+                <relationship kind="action" name="clickBack:"/>
                 <relationship kind="action" name="clickEdit:"/>
                 <relationship kind="outlet" name="mImageQ1NO" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="mImageQ1Yes" candidateClass="UIImageView"/>

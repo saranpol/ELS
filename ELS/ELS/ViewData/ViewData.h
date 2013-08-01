@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewData : UIViewController
+@interface ViewData : UIViewController <UITableViewDataSource, UITableViewDelegate>
+
+@property (nonatomic, weak) IBOutlet UITableView *mTableView;
 
 - (IBAction)clickBack:(id)sender;
 

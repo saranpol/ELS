@@ -22,6 +22,8 @@
 
 static API *instance;
 
+static NSString *kSaveData = @"SAVE_DATA_KEY";
+
 + (API*)getAPI {
     if (instance == nil) {
         instance = [[API alloc] init];
@@ -32,9 +34,25 @@ static API *instance;
 - (API*)init {
     API *a = [super init];
     
-    self.mArrayData = [[NSMutableArray alloc] init];
+    NSArray *loadArray = [self loadObject:kSaveData];
+    if(loadArray){
+        self.mArrayData = [NSMutableArray arrayWithArray:loadArray];
+    }else{
+        self.mArrayData = [[NSMutableArray alloc] init];
+    }
     
     return a;
+}
+
+
+- (id)loadObject:(NSString*)key {
+    return [[NSUserDefaults standardUserDefaults] objectForKey:key];
+}
+
+- (void)saveObject:(id)obj forKey:(NSString*)key {
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    [userDefaults setObject:obj forKey:key];
+    [userDefaults synchronize];
 }
 
 - (void)resetData {
@@ -54,14 +72,36 @@ static API *instance;
     [d setObject:[NSNumber numberWithInt:mQ2] forKey:@"mQ2"];
     [d setObject:[NSNumber numberWithInt:mQ3] forKey:@"mQ3"];
     [d setObject:[NSNumber numberWithBool:mQ4] forKey:@"mQ4"];
-    [d setObject:mName forKey:@"mName"];
-    [d setObject:mPhone forKey:@"mPhone"];
-    [d setObject:mEmail forKey:@"mEmail"];
+    if(mName)
+        [d setObject:mName forKey:@"mName"];
+    else
+        [d setObject:@"" forKey:@"mName"];
+    if(mPhone)
+        [d setObject:mPhone forKey:@"mPhone"];
+    else
+        [d setObject:@"" forKey:@"mPhone"];
+    if(mEmail)
+        [d setObject:mEmail forKey:@"mEmail"];
+    else
+        [d setObject:@"" forKey:@"mEmail"];
+        
     [mArrayData addObject:d];
+    
+    [self saveObject:mArrayData forKey:kSaveData];
 }
 
 - (NSString*)getHtml {
-    NSString *html = @"<table><tr><td>Name</td><td>Phone</td><td>Email</td><td>Q1</td><td>Q2</td><td>Q3</td><td>Q4</td></tr>";
+    NSString *html = @"<style>\
+    table{\
+        font-family:Arial;\
+        border-collapse:collapse;\
+    }\
+    table, td, th{\
+        border:1px solid black;\
+        padding:15px;\
+    }\
+    </style>\
+    <table><tr><td>Name</td><td>Phone</td><td>Email</td><td>Q1</td><td>Q2</td><td>Q3</td><td>Q4</td></tr>";
     
     for(NSDictionary *d in mArrayData){
         NSString *name = [d objectForKey:@"mName"];
@@ -79,5 +119,9 @@ static API *instance;
     return html;
 }
 
+- (void)removeData:(int)idx {
+    [mArrayData removeObjectAtIndex:idx];
+    [self saveObject:mArrayData forKey:kSaveData];
+}
 
 @end

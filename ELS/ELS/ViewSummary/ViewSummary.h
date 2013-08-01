@@ -20,4 +20,6 @@
 
 - (IBAction)clickEdit:(id)sender;
 
+- (IBAction)clickBack:(id)sender;
+
 @end
