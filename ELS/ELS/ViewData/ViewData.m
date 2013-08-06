@@ -47,7 +47,9 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    CellUser *cell = [tableView dequeueReusableCellWithIdentifier:@"CellUser" forIndexPath:indexPath];
+//    CellUser *cell = [tableView dequeueReusableCellWithIdentifier:@"CellUser" forIndexPath:indexPath];
+    CellUser *cell = [tableView dequeueReusableCellWithIdentifier:@"CellUser"];
+    
     API *a = [API getAPI];
     NSDictionary *d = [a.mArrayData objectAtIndex:indexPath.row];
     [cell.mLabelName setText:[d objectForKey:@"mName"]];
@@ -66,6 +68,10 @@
     cell.tag = indexPath.row;
     
     return cell;
+}
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
+    return toInterfaceOrientation == UIInterfaceOrientationLandscapeLeft || toInterfaceOrientation == UIInterfaceOrientationLandscapeRight;
 }
 
 

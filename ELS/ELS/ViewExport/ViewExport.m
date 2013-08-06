@@ -11,7 +11,7 @@
 
 @implementation ViewExport
 
-@synthesize mWebView;
+@synthesize mTextView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -28,7 +28,8 @@
 	// Do any additional setup after loading the view.
     
     API *a = [API getAPI];
-    [mWebView loadHTMLString:[a getHtml] baseURL:nil];
+    //[mWebView loadHTMLString:[a getHtml] baseURL:nil];
+    [mTextView setText:[a getHtml]];
 }
 
 - (void)didReceiveMemoryWarning
@@ -41,5 +42,9 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
+    return toInterfaceOrientation == UIInterfaceOrientationLandscapeLeft || toInterfaceOrientation == UIInterfaceOrientationLandscapeRight;
+}
 
 @end

@@ -10,7 +10,7 @@
 
 @interface ViewExport : UIViewController
 
-@property (nonatomic, weak) IBOutlet UIWebView *mWebView;
+@property (nonatomic, weak) IBOutlet UITextView *mTextView;
 
 - (IBAction)clickBack:(id)sender;
 
