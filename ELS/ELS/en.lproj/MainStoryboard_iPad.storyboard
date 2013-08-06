@@ -478,14 +478,21 @@
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zwS-Mb-oym">
                                 <rect key="frame" x="683" y="302" width="109" height="51"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rWH-J4-1Tk">
                                 <rect key="frame" x="683" y="362" width="109" height="51"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="น๊อต นามสกุล" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ddW-34-VZ5">
+                                <rect key="frame" x="445" y="137" width="542" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="56"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -498,6 +505,7 @@
                         <outlet property="mImageQ1Yes" destination="fAC-2o-ny5" id="TUb-wp-sVX"/>
                         <outlet property="mImageQ4NO" destination="vHS-gB-2V7" id="GMj-Vp-NSf"/>
                         <outlet property="mImageQ4Yes" destination="HSu-BW-Ib5" id="lJx-mN-3JL"/>
+                        <outlet property="mLabelName" destination="ddW-34-VZ5" id="GcZ-wz-D5N"/>
                         <outlet property="mLabelQ2" destination="zwS-Mb-oym" id="ezO-DD-KEs"/>
                         <outlet property="mLabelQ3" destination="rWH-J4-1Tk" id="UOf-Sy-F0j"/>
                     </connections>
@@ -790,6 +798,7 @@
                 <relationship kind="outlet" name="mImageQ1Yes" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="mImageQ4NO" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="mImageQ4Yes" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="mLabelName" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="mLabelQ2" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="mLabelQ3" candidateClass="UILabel"/>
             </relationships>

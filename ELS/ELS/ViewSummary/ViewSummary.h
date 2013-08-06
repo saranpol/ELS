@@ -16,6 +16,7 @@
 @property (nonatomic, weak) IBOutlet UIImageView *mImageQ4NO;
 @property (nonatomic, weak) IBOutlet UILabel *mLabelQ2;
 @property (nonatomic, weak) IBOutlet UILabel *mLabelQ3;
+@property (nonatomic, weak) IBOutlet UILabel *mLabelName;
 
 
 - (IBAction)clickEdit:(id)sender;

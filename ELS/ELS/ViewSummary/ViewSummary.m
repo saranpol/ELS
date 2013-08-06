@@ -16,6 +16,7 @@
 @synthesize mImageQ4NO;
 @synthesize mLabelQ2;
 @synthesize mLabelQ3;
+@synthesize mLabelName;
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -39,6 +40,10 @@
     [mImageQ4NO setHidden:a.mQ4];
     [mLabelQ2 setText:[NSString stringWithFormat:@"%d", a.mQ2]];
     [mLabelQ3 setText:[NSString stringWithFormat:@"%d", a.mQ3]];
+    [mLabelName setText:a.mName];
+    [mLabelQ2 setFont:[UIFont fontWithName:@"Kittithada Thin 35 P" size:mLabelQ2.font.pointSize]];
+    [mLabelQ3 setFont:[UIFont fontWithName:@"Kittithada Thin 35 P" size:mLabelQ3.font.pointSize]];
+    [mLabelName setFont:[UIFont fontWithName:@"Kittithada Light 45 P" size:mLabelName.font.pointSize]];
 }
 
 - (void)didReceiveMemoryWarning

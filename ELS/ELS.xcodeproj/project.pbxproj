@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		438539FD17B15050002768D6 /* kit35p.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 438539FB17B15050002768D6 /* kit35p.ttf */; };
+		438539FE17B15050002768D6 /* kit45p.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 438539FC17B15050002768D6 /* kit45p.ttf */; };
 		43EF61D017A983E000F5C115 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43EF61CF17A983E000F5C115 /* UIKit.framework */; };
 		43EF61D217A983E000F5C115 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43EF61D117A983E000F5C115 /* Foundation.framework */; };
 		43EF61D417A983E000F5C115 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43EF61D317A983E000F5C115 /* CoreGraphics.framework */; };
@@ -54,6 +56,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		438539FB17B15050002768D6 /* kit35p.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = kit35p.ttf; sourceTree = "<group>"; };
+		438539FC17B15050002768D6 /* kit45p.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = kit45p.ttf; sourceTree = "<group>"; };
 		43EF61CC17A983E000F5C115 /* ELS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ELS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43EF61CF17A983E000F5C115 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		43EF61D117A983E000F5C115 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -130,6 +134,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		438539FA17B15050002768D6 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				438539FB17B15050002768D6 /* kit35p.ttf */,
+				438539FC17B15050002768D6 /* kit45p.ttf */,
+			);
+			path = Font;
+			sourceTree = SOURCE_ROOT;
+		};
 		43EF61C317A983E000F5C115 = {
 			isa = PBXGroup;
 			children = (
@@ -177,6 +190,7 @@
 				43EF622617A995BF00F5C115 /* ViewQ2 */,
 				43EF622717A995BF00F5C115 /* ViewQ1 */,
 				43EF61FE17A98B1C00F5C115 /* Images */,
+				438539FA17B15050002768D6 /* Font */,
 				43EF624B17A9BA2F00F5C115 /* icon */,
 				43EF61D617A983E000F5C115 /* Supporting Files */,
 			);
@@ -411,6 +425,8 @@
 				43EF625917A9BA2F00F5C115 /* Icon-Small@2x.png in Resources */,
 				43EF625A17A9BA2F00F5C115 /* Icon.png in Resources */,
 				43EF625B17A9BA2F00F5C115 /* Icon@2x.png in Resources */,
+				438539FD17B15050002768D6 /* kit35p.ttf in Resources */,
+				438539FE17B15050002768D6 /* kit45p.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
